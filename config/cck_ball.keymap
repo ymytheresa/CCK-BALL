@@ -67,11 +67,11 @@
 
         F_layers {
             bindings = <
-&kp F12  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6            &kp F7             &kp F8  &kp F9     &kp F10    &kp F11
-&kp A    &none   &none   &none   &none   &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none   &kp MINUS  &kp EQUAL  &trans
-&trans   &none   &none   &none   &none   &trans  &mkp LCLK         &mkp RCLK          &trans  &trans     &trans     &trans
-&trans   &trans  &trans  &trans  &trans  &none   &mkp MB4          &mkp MB5           &trans  &trans     &none      &trans
-&trans   &trans  &trans  &trans  &trans  &trans  &mkp LCLK         &mkp RCLK          &trans  &trans     &trans     &trans
+&kp F12  &kp F1  &kp F2  &kp F3        &kp F4          &kp F5  &kp F6            &kp F7             &kp F8  &kp F9     &kp F10    &kp F11
+&none    &none   &none   &kp LC(BSPC)  &kp LC(DELETE)  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none   &kp MINUS  &kp EQUAL  &trans
+&trans   &none   &none   &kp LC(LEFT)  &kp LC(RIGHT)   &trans  &mkp LCLK         &mkp RCLK          &trans  &trans     &trans     &trans
+&trans   &trans  &trans  &kp HOME      &kp END         &none   &mkp MB4          &mkp MB5           &trans  &trans     &none      &trans
+&trans   &trans  &trans  &trans        &trans          &trans  &mkp LCLK         &mkp RCLK          &trans  &trans     &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -112,7 +112,7 @@
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                // 编码器1：上下滚动,,,,
+                // 编码器1：上下滚动,,,,,
                 <&scroll_horizontal_encoder>;
 
             // 编码器2：左右滚动
